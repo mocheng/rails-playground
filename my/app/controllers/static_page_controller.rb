@@ -4,6 +4,8 @@ class StaticPageController < ApplicationController
   @@visit_count = 0
 
   def initialize
+    super
+
     @count = 0
     puts 'new class instance'
   end

@@ -10,10 +10,9 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <%= capture do
+    <%= capture do %>
       Hello world <%= Time.now %>
-    end
-    %>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>
